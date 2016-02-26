@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button</title>
+	
+	<link rel="stylesheet" href="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+	
+	<style>
+		#custom-border-radius .ui-btn-icon-notext.ui-corner-all {
+		    -webkit-border-radius: .3125em;
+		    border-radius: .3125em;
+		}
+	</style>
+
+</head>
+<body>
+	<h2>Basic button</h2>
+	<a href="#" class="ui-btn">Anchor</a>
+	<button class="ui-btn">Button</button>
+	<h2>Icon Button</h2>
+	<hr>
+	<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left">Anchor</a>
+	<button class="ui-btn ui-icon-delete ui-btn-icon-left">Button</button>
+	<h2>corner button</h2>
+	<hr>
+	<a href="#" class="ui-btn ui-corner-all">Anchor</a>
+	<button class="ui-btn ui-corner-all">Button</button>
+	<h3>shadow</h3>
+	<hr>
+	<a href="#" class="ui-btn ui-shadow">Anchor</a>
+	<button class="ui-btn ui-shadow">Button</button>
+	<h3>inline button</h3>
+	<hr>
+	<a href="#" class="ui-btn ui-btn-inline">Anchor</a>
+	<button class="ui-btn ui-btn-inline">Button</button>
+	<h3>Theme inheritances</h3>
+	<hr>
+	<a href="#" class="ui-btn">Anchor - Inherit</a>
+	<a href="#" class="ui-btn ui-btn-a">Anchor - Theme swatch A</a>
+	<a href="#" class="ui-btn ui-btn-b">Anchor - Theme swatch B</a>
+	<button class="ui-btn">Button - Inherit</button>
+	<button class="ui-btn ui-btn-a">Button - Theme swatch A</button>
+	<button class="ui-btn ui-btn-b">Button - Theme swatch B</button>
+	<h3>min button</h3>
+	<hr>
+	<a href="#" class="ui-btn ui-mini">Anchor</a>
+	<button class="ui-btn ui-mini">Button</button>
+	<h3>Icon Position</h3>
+	<hr>
+	<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left">Left</a>
+	<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-right">Right</a>
+	<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-top">Top</a>
+	<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-bottom">Bottom</a>
+	<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext">Icon only</a>
+	<h3>Inline</h3>
+	<hr>
+	<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left">Left</a>
+	<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Right</a>
+	<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-top">Top</a>
+	<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-bottom">Bottom</a>
+	<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-notext">Icon only</a>
+	<h3> icon shadow</h3>
+	<hr>
+	<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left ui-shadow-icon">Anchor</a>
+	<p>Theme B:</p>
+	<button class="ui-btn ui-icon-delete ui-btn-icon-left ui-shadow-icon ui-btn-b">Button</button>
+	<h3>disabled</h3>
+	<hr>
+	<a href="#" class="ui-btn ui-state-disabled">Disabled anchor via class</a>
+	<button disabled="">Button with disabled attribute</button>
+	<h3>extra disabled</h3>
+	<hr>
+	<!-- <label for="username" class="ui-state-disabled">Username:</label>
+	<input type="text" name="username" id="" value="" placeholder="Username"/> -->
+	<div data-role="fieldcontain" class="ui-state-disabled">
+		<label for="username">Username:</label>
+		<input type="text" name="username" id="username" value="" placeholder="Username"/>
+	</div>
+	<h3>native button</h3>
+	<hr>
+	<button data-role="none">Button</button>
+
+	<script src="../js/jquery/dist/jquery.js"></script>
+	<script>
+		$(document).bind('mobileinit',function(){
+			$.mobile.changePage.defaults.changeHash = false;
+			$.mobile.hashListeningEnabled = false;
+			$.mobile.pushStateEnabled = false;
+		});
+		$('.ui-state-disabled').textinput('disable');			
+
+	</script> 
+	<script src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>collapsible</title>
+	
+	<link rel="stylesheet" href="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+	
+</head>
+<body>
+	<h3>MarkUp</h3>
+	<hr>
+	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+		<div data-role="collapsible">
+			<h3>Section 1</h3>
+			<p>I'm the collapsible content for section 1</p>
+		</div>
+		<div data-role="collapsible">
+			<h3>Section 2</h3>
+			<p>I'm the collapsible content for section 2</p>
+		</div>
+		<div data-role="collapsible">
+			<h3>Section 3</h3>
+			<p>I'm the collapsible content for section 3</p>
+		</div>
+	</div>
+	<h3>inset vs. full width</h3>
+	<hr>
+	<div data-role="collapsibleset" data-inset="false">
+		<div data-role="collapsible">
+			<h3>Animals</h3>
+			<ul data-role="listview" data-inset="false">
+				<li>Cats</li>
+				<li>Dogs</li>
+				<li>Lizards</li>
+				<li>Snakes</li>
+			</ul>
+		</div>
+		<div data-role="collapsible">
+			<h3>Cars</h3>
+			<ul data-role="listview" data-inset="false">
+				<li>Acura</li>
+				<li>Audi</li>
+				<li>BMW</li>
+				<li>Cadillac</li>
+			</ul>
+		</div>
+		<div data-role="collapsible">
+			<h3>Planets</h3>
+			<ul data-role="listview" data-inset="false">
+				<li>Earth</li>
+				<li>Jupiter</li>
+				<li>Mars</li>
+				<li>Mercury</li>
+			</ul>
+		</div>
+	</div>
+	<h3>mini</h3>
+	<hr>
+	<div data-role="collapsibleset" data-theme="a" data-content-theme="a" data-mini="true">
+		<div data-role="collapsible">
+			<h3>I'm a mini collapsible</h3>
+			<p>This is good for tight spaces.</p>
+		</div>
+		<div data-role="collapsible">
+			<h3>I'm another mini</h3>
+			<p>Here's some collapsible content.</p>
+		</div>
+		<div data-role="collapsible">
+			<h3>Last one</h3>
+			<p>Final bit of collapsible content.</p>
+		</div>
+	</div>
+	<h2>icon</h2>
+	<hr>
+	<div data-role="collapsibleset" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+		<div data-role="collapsible">
+			<h3>Icon set on the set</h3>
+			<p>Specify the open and close icons on the set to apply it to all the collapsibles within.</p>
+		</div>
+		<div data-role="collapsible">
+			<h3>Icon set on the set</h3>
+			<p>This collapsible also gets the icon from the set.</p>
+		</div>
+		<div data-role="collapsible" data-collapsed-icon="gear" data-expanded-icon="delete">
+			<h3>Icon set on this collapsible</h3>
+			<p>The icons here are applied to this collapsible specifically, thus overriding the set icons.</p>
+		</div>
+	</div>
+	<h3>Icon Position</h3>
+	<hr>
+	<div data-role="collapsibleset" data-theme="a" data-content-theme="a" data-iconpos="right">
+		<div data-role="collapsible">
+			<h3>Right</h3>
+			<p>Inherits icon positioning from <code>data-iconpos="right"</code> attribute on set.</p>
+		</div>
+		<div data-role="collapsible" data-iconpos="left">
+			<h3>Left</h3>
+			<p>Set via <code>data-iconpos="left"</code> attribute on the collapsible</p>
+		</div>
+		<div data-role="collapsible" data-iconpos="bottom">
+			<h3>Bottom</h3>
+			<p>Set via <code>data-iconpos="bottom"</code> attribute on the collapsible</p>
+		</div>
+		<div data-role="collapsible" data-iconpos="top">
+			<h3>Top</h3>
+			<p>Set via <code>data-iconpos="top"</code> attribute on the collapsible</p>
+		</div>
+	</div>
+	<h3>corner</h3>
+	<hr>
+	<div data-role="collapsibleset" data-corners="false" data-theme="a" data-content-theme="a">
+			<div data-role="collapsible">
+					<h3>Section 1</h3>
+				<p>Collapsible content</p>
+			</div>
+			<div data-role="collapsible">
+					<h3>Section 2</h3>
+				<p>Collapsible content</p>
+			</div>
+			<div data-role="collapsible">
+					<h3>Section 3</h3>
+				<p>Collapsible content</p>
+			</div>
+	</div>
+	<h3>theme</h3>
+	<hr>
+	<div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+			<div data-role="collapsible">
+					<h3>Heading</h3>
+					<p>Content</p>
+			</div>
+			<div data-role="collapsible">
+					<h3>Heading</h3>
+					<p>Content</p>
+			</div>
+	</div>
+	<h3>111111111</h3>
+	<hr>
+	<div data-role="collapsibleset" data-theme="b" data-content-theme="b">
+			<div data-role="collapsible">
+					<h3>Heading</h3>
+					<p>Content</p>
+			</div>
+			<div data-role="collapsible" data-theme="a" data-content-theme="a">
+					<h3>Heading</h3>
+					<p>Content</p>
+			</div>
+			<div data-role="collapsible">
+					<h3>Heading</h3>
+					<p>Content</p>
+			</div>
+	</div>
+	<script src="../js/jquery/dist/jquery.js"></script>
+	<script>
+		$(document).bind('mobileinit',function(){
+			$.mobile.changePage.defaults.changeHash = false;
+			$.mobile.hashListeningEnabled = false;
+			$.mobile.pushStateEnabled = false;
+		});
+	</script>
+	<script src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

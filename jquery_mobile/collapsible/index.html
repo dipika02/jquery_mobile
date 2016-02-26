@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collapsible</title>
+	<link rel="stylesheet" href="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+	<style >
+		#demo-borders .ui-collapsible-heading .ui-btn { border-top-width: 1px !important; }
+	</style>
+</head>
+<body>
+	<h3>basic collapsible</h3>
+	<hr>
+	<div data-role="collapsible">
+		<h4>Heading</h4>
+		<p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
+	</div>
+	<h3>Theme</h3>
+	<hr>
+	<div data-role="collapsible" data-theme="b" data-content-theme="b">
+		<h4>Heading</h4>
+		<p>I'm the collapsible content with a themed content block set to "b".</p>
+	</div>
+	<div data-role="collapsible" data-content-theme="false">
+		<h4>Heading</h4>
+		<p>I'm the collapsible content without a theme.</p>
+	</div>
+	<h3>Expanded</h3>
+	<hr>
+	<div data-role="collapsible" data-collapsed="false">
+		<h4>Heading</h4>
+		<ul data-role="listview">
+			<li><a href="#">List item 1</a></li>
+			<li><a href="#">List item 2</a></li>
+			<li><a href="#">List item 3</a></li>
+		</ul>
+	</div>
+	<h3>Mini Sized</h3>
+	<hr>
+	<div data-role="collapsible" data-mini="true">
+		<h4>Heading</h4>
+		<ul data-role="listview">
+			<li><a href="#">List item 1</a></li>
+			<li><a href="#">List item 2</a></li>
+			<li><a href="#">List item 3</a></li>
+		</ul>
+	</div>
+	<h3>Icon</h3>
+	<hr>
+	<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+		<h4>Heading</h4>
+		<ul data-role="listview" data-inset="false">
+			<li>Read-only list item 1</li>
+			<li>Read-only list item 2</li>
+			<li>Read-only list item 3</li>
+		</ul>
+	</div>
+	<h3>Icon</h3>
+	<hr>
+	<div data-role="collapsible" data-iconpos="right" data-expanded-icon="carat-u">
+		<h4>Heading</h4>
+		<ul data-role="listview" data-inset="false">
+			<li>Read-only list item 1</li>
+			<li>Read-only list item 2</li>
+			<li>Read-only list item 3</li>
+		</ul>
+	</div>
+	<h3>legend</h3>
+	<hr>
+	<form>
+		<fieldset data-role="collapsible">
+			<legend>Legend</legend>
+			<label for="textinput-f">Text Input:</label>
+			<input type="text" name="textinput-f" id="textinput-f" placeholder="Text input" value="">
+			<div data-role="controlgroup">
+				<input type="checkbox" name="checkbox-1-a" id="checkbox-1-a">
+				<label for="checkbox-1-a">One</label>
+				<input type="checkbox" name="checkbox-2-a" id="checkbox-2-a">
+				<label for="checkbox-2-a">Two</label>					
+				<input type="checkbox" name="checkbox-3-a" id="checkbox-3-a">
+				<label for="checkbox-3-a">Three</label>
+			</div>
+		</fieldset>
+	</form>
+	<h3>non-inset-collapse</h3>
+	<hr>
+	<div data-role="collapsible" data-inset="false">
+		<h4>Heading</h4>
+		<p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
+	</div>
+	<h3>set of indivisul collapse</h3>
+	<hr>
+	<div data-role="collapsible" data-inset="false">
+		<h3>Pets</h3>
+		<ul data-role="listview">
+			<li><a href="#">Canary</a></li>
+			<li><a href="#">Cat</a></li>
+			<li><a href="#">Dog</a></li>
+			<li><a href="#">Gerbil</a></li>
+			<li><a href="#">Iguana</a></li>
+			<li><a href="#">Mouse</a></li>
+		</ul>
+	</div><!-- /collapsible -->
+	<div data-role="collapsible" data-inset="false">
+		<h3>Farm animals</h3>
+		<ul data-role="listview">
+			<li><a href="#">Chicken</a></li>
+			<li><a href="#">Cow</a></li>
+			<li><a href="#">Duck</a></li>
+			<li><a href="#">Horse</a></li>
+			<li><a href="#">Pig</a></li>
+			<li><a href="#">Sheep</a></li>
+		</ul>
+	</div><!-- /collapsible -->
+	<div data-role="collapsible" data-inset="false">
+		<h3>Wild Animals</h3>
+		<ul data-role="listview">
+			<li><a href="#">Aardvark</a></li>
+			<li><a href="#">Alligator</a></li>
+			<li><a href="#">Ant</a></li>
+			<li><a href="#">Bear</a></li>
+			<li><a href="#">Beaver</a></li>
+			<li><a href="#">Cougar</a></li>
+			<li><a href="#">Dingo</a></li>
+		</ul>
+	</div><!-- /collapsible -->
+	<div id="demo-borders">
+		<div data-role="collapsible" data-inset="false">
+			<h3>Pets</h3>
+			<ul data-role="listview">
+				<li><a href="#">Canary</a></li>
+				<li><a href="#">Cat</a></li>
+				<li><a href="#">Dog</a></li>
+				<li><a href="#">Gerbil</a></li>
+				<li><a href="#">Iguana</a></li>
+				<li><a href="#">Mouse</a></li>
+			</ul>
+		</div><!-- /collapsible -->
+		<div data-role="collapsible" data-inset="false">
+			<h3>Farm animals</h3>
+			<ul data-role="listview">
+				<li><a href="#">Chicken</a></li>
+				<li><a href="#">Cow</a></li>
+				<li><a href="#">Duck</a></li>
+				<li><a href="#">Horse</a></li>
+				<li><a href="#">Pig</a></li>
+				<li><a href="#">Sheep</a></li>
+			</ul>
+		</div><!-- /collapsible -->
+	</div>
+	<h3>PreRender MarkUp</h3>
+	<h3>
+		<div data-role="collapsible" data-enhanced="true" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-collapsed">
+			<h4 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+				<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-icon-plus">
+					Heading
+					<div class="ui-collapsible-heading-status"> click to expand contents</div>
+				</a>
+			</h4>
+			<div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+				<p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
+			</div>
+		</div>
+		<h2>Dynamic collapsible</h2>
+		<hr>
+		<button type="button" data-icon="gear" data-iconpos="right" data-mini="true" data-inline="true" id="add">Add</button>
+		<button type="button" data-icon="plus" data-iconpos="right" data-mini="true" data-inline="true" id="expand">Expand last</button>
+		<button type="button" data-icon="minus" data-iconpos="right" data-mini="true" data-inline="true" id="collapse">Collapse last</button>
+		<div data-role="collapsibleset" data-content-theme="a" data-iconpos="right" id="set">
+				<div data-role="collapsible" id="set1" data-collapsed="true">
+						<h3>Section 1</h3>
+						<p>I'm the collapsible content.</p>
+				</div>
+		</div>
+
+		<script src="../js/jquery/dist/jquery.js"></script>
+		<script>
+			$(document).bind('mobileinit',function(){
+				$.mobile.changePage.defaults.changeHash = false;
+				$.mobile.hashListeningEnabled = false;
+				$.mobile.pushStateEnabled = false;
+			});
+
+			$( document ).on( "pagecreate", function() {
+					var nextId = 1;
+					$("#add").click(function() {
+							nextId++;
+							var content = "<div data-role='collapsible' id='set" + nextId + "'><h3>Section " + nextId + "</h3><p>I am the collapsible content in a set so this feels like an accordion. I am hidden by default because I have the 'collapsed' state; you need to expand the header to see me.</p></div>";
+							$( "#set" ).append( content ).collapsibleset( "refresh" );
+					});
+					$( "#expand" ).click(function() {
+							$("#set").children(":last").collapsible( "expand" );
+					});
+					$( "#collapse" ).click(function() {
+							$( "#set" ).children( ":last" ).collapsible( "collapse" );
+					});
+			});
+
+		</script> 
+
+		<script src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</body>
+	</html>
